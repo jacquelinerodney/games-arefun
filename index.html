@@ -14,30 +14,50 @@
 
 <body> 
     <!--High scores page link and timer-->
-    <div class="scores"><a href="highscores.html">"High Scores </a></div>
+    <div class="scores"><a href="highscores.html">High Scores </a></div>
     <div class="timer"> Tiime Remaing: <span id="time">02:00</span></div>
 
 <!--Content for Quiz-->
     <div class="wrapper">
+        <div id="start-page" class="start"
+        <h1> Coding Quiz Challenge</h1>
 
+        <p> This quiz will test your knowledge of coding concepts through a series of multiple choice questions. Try to answer them as quickly as possibly to the best of your ability. High Scores are recorded at the end. Good Luck! </p>
+
+        <!-- add start button-->
+        <button id="start">Start Quiz</button>
+    </div>
+
+    <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="gameover">
+
+        <div id="end-page" class="hide">
+
+            <!-- End Page & Final Score-->
+         <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <!-- User Options to Replay/clear scores-->
+      <div id="endPageBtns">
+        <button id="playAgain" onclick="restartQuiz()">Play Again</button>
+        <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+    </div>
 
     </div>
 
-    <div id="startpage">
-        
-
-    </div>
-
-
+    <script src="script.js"></script>
+    
+    <!-- link highscores page??-->
 
 
 
 </body>
-
-
-
-
-
-
-
 </html>
