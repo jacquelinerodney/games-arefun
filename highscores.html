@@ -15,14 +15,15 @@
 
 <body>
    
-// 
     <!-- High Score-->
 
 
     <div id="finalScore"></div>
-    <input type="text" size = "40" placeholder="Enter you initials for high score" name="intials" id="initials"/>
-    <button id="submitScore">Submit Score</button>
-    <div id=highscoreContainer>
+             <input type="text" size = "40" placeholder="Enter you initials for high score" name="intials" id="initials"/>
+                 <button id="submitScore">Submit Score</button>
+
+
+    <div id=highscoreContainer class="flex-center">
         <div id="highscorePage">
             <div id="highscore-header">
                 <h3>Initials</h3>
@@ -31,8 +32,10 @@
             <div id = "highscore-initials"></div>
             <div id = "highscore-results"></div>
         </div>
+
+
     <!-- User Options to Replay/clear scores-->
-    <div id="endPageBtns">
+    <div id="endPageBtns" class="center">
       <button id="playAgain" onclick="restartQuiz()">Play Again</button>
      <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
     </div>
