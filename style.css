@@ -1,6 +1,6 @@
 body 
 
-.wrapper {
+.container {
     margin: 100px auto 0 auto;
     max-width: 600px;
   }
@@ -74,4 +74,47 @@ body
   
   li:nth-child(odd) {
     background-color: #dfdae7;
+  }
+
+
+  body 
+
+    .highscoreContainer {
+
+    height: 100%;
+  
+  
+  }
+  
+  
+  .parent {
+  
+  
+    height: 100%;
+  
+  
+    display: flex;
+  
+  
+    align-items: center;
+  
+  
+    justify-content: center;
+  
+  
+  }
+  
+  
+  .center {
+  
+  
+    background-color: #06b9f000;
+  
+  
+    width: 200px;
+  
+  
+    height: 200px;
+  
+  
   }
