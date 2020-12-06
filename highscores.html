@@ -14,16 +14,31 @@
 
 
 <body>
-    <h1>High Scores</h1>
-    <div class="resultContainer">
+   
+// 
+    <!-- High Score-->
 
-        </div id="result" class="results"><div>  
 
-        <form style="display: inline" action="index.html" method="get"><br>
-            <button>Back</button>
-         </form>
-    </div>        
-        
-<script src="script.js"></script> 
+    <div id="finalScore"></div>
+    <input type="text" size = "40" placeholder="Enter you initials for high score" name="intials" id="initials"/>
+    <button id="submitScore">Submit Score</button>
+    <div id=highscoreContainer>
+        <div id="highscorePage">
+            <div id="highscore-header">
+                <h3>Initials</h3>
+                <h3>Score</h3>
+            </div>
+            <div id = "highscore-initials"></div>
+            <div id = "highscore-results"></div>
+        </div>
+    <!-- User Options to Replay/clear scores-->
+    <div id="endPageBtns">
+      <button id="playAgain" onclick="restartQuiz()">Play Again</button>
+     <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+    </div>
+    
+    </div>
+
+    <script src="script.js"></script> 
 </body>
 </html>
