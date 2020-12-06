@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- End Page & Final Score-->
+
+    <div class="container">
+        <div id="end-page" class="hide" class="flex-center flex-column">
+
+        <p>Your final score is <span id="final-score"></span>.</p>
+            <p> Enter initials: <input type="text" id="initials" max="3" />
+  <button id="submit">Submit</button>
+</p>
+</div>
+
+<!-- User Options to Replay/clear scores-->
+<div id="endPageBtns">
+<button id="playAgain" onclick="restartQuiz()">Play Again</button>
+<button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
